@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator Servlet</title>
+</head>
+<body>
+<h2>Simple Calculator</h2>
+
+<form id="myform" action="calculservlet" method="get">
+    <label>Number 1:
+        <input type="text" name="num1" required>
+    </label>
+    <br><br>
+
+    <label>Number 2:
+        <input type="text" name="num2" required>
+    </label>
+    <br><br>
+
+    <input type="radio" id="add" name="operation" value="add" required>
+    <label for="add">Addition</label><br>
+
+    <input type="radio" id="sub" name="operation" value="sub">
+    <label for="sub">Subtraction</label><br>
+
+    <input type="radio" id="mul" name="operation" value="mul">
+    <label for="mul">Multiplication</label><br>
+
+    <input type="radio" id="div" name="operation" value="div">
+    <label for="div">Division</label><br><br>
+
+    <button type="submit">Calculate</button>
+</form>
+
+</body>
+</html>
